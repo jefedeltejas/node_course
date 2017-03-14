@@ -14,7 +14,7 @@ notes = require('./notes.js');
 
 var command = process.argv[2];
 console.log('Command: ', command);
-console.log('Process',process.argv);
+// console.log('Process',process.argv);
 console.log('Yargs', argv);
 
 if(command === 'add') {
