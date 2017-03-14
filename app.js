@@ -3,7 +3,11 @@ console.log('Starting app.js');
 // constants
 const fs = require('fs'),
 os = require('os'),
+_ = require('lodash')
 notes = require('./notes.js');
+
+console.log(_.isString(true));
+console.log(_.isString("Bossman"));
 
 //variables
 var res = notes.addNote(),
