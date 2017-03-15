@@ -8,9 +8,19 @@ var getAll = () => {
   console.log('Getting all of them notes');
 };
 
+var getNote = (title) => {
+  console.log('Getting that note', title);
+};
+
+var removeNote = (title) => {
+  console.log('Getting rid of that note.', title);
+};
+
 module.exports = {
   addNote,
-  getAll
+  getAll,
+  getNote,
+  removeNote
 };
 
 
