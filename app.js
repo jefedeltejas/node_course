@@ -22,8 +22,8 @@ if(command === 'add') {
   if (note) {
     console.log('Note created');
     console.log('--$$$--');
-    console.log('Title: ${note.title}');
-    console.log('Body: ${note.body}');
+    console.log(`Title: ${note.title}`);
+    console.log(`Body: ${note.body}`);
   } else {
     console.log('Note title ardy taken. Pick another.');
   }
@@ -31,11 +31,11 @@ if(command === 'add') {
   notes.getAll();
 } else if (command === 'read') {
   var note = notes.getNote(argv.title);
-  console.log('--$$$--');
-  console.log('Title: ${note.title}');
-  console.log('Body: ${note.body}');
   if (note) {
     console.log('Note found');
+    console.log('--$$$--');
+    console.log(`Title: ${note.title}`);
+    console.log(`Body: ${note.body}`);
   } else {
     console.log('Note not found');
   }
